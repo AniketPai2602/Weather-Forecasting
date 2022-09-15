@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+
+* {
+    box-sizing: border-box;
+}
+
+header,
+section {
+    overflow-x: hidden;
+
+}
+
+:root {
+    --Sniglet-font: "Sniglet", cursive;
+    --Rubik: "Rubik", cursive;
+    --Patua: "Patua One", cursive;
+    --Lobster: "lobster", cursive;
+    --light-black: #2e2c2caf;
+    --bggradient: linear-gradient(to bottom, #27df36, #a3199c);
+    --light-gray: rgba(255, 255, 255, 0.877);
+
+}
+
+header a {
+    font-family: var(--Sniglet-font);
+    font-size: 0.9em;
+    color: whitesmoke;
+}
+
+
+header .row .col-md-7 {
+    padding: 22vmin 1vmin;
+    padding-bottom: 60vmin;
+
+}
+
+header .row .col-md-5 {
+    padding: 4.2vmin 1vmin;
+}
+
+header .row .col-md-5 img {
+    width: 130%;
+
+}
+
+header {
+    background: #ff512f;
+    background: var(--bggradient);
+
+}
+
+header .container .col-md-7 {
+    font-family: "Rubik", sans-serif;
+}
+
+header .container .col-md-7 h6 {
+    padding: 1vmin;
+    letter-spacing: 4px;
+}
+
+header .container .col-md-7 h1 {
+    font-size: 8.5vmin;
+    font-weight: bold;
+    padding: 0.1em 0em;
+}
+
+header .container .col-md-7 p {
+    padding: 1vmin 5vmin;
+}
+
+
+/********** section 1 **************/
+
+.section-1 {
+    padding: 20vmin 0vmin;
+    padding-bottom: 12vmin;
+}
+
+
+.section-1 .row .col-md-6:last-child {
+    position: relative;
+}
+
+.section-1 .row .col-md-6 .panel {
+    position: absolute;
+    top: 7vmin;
+    left: -18vmin;
+    background: white;
+    border-radius: 3px;
+    text-align: left;
+    padding: 13vmin 5vmin 20vmin 10vmin;
+    box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+    font-family: var(--Rubik);
+    z-index: 1;
+}
+
+.section-1 .row .col-md-6 .panel h1 {
+    font-weight: bold;
+    padding: 0.4em 0;
+    font-size: 2em;
+}
+
+.section-1 .row .col-md-6 .panel p {
+    font-size: 0.9em;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+.card {
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+    margin-left: 40vmin;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+}
+
+button:hover {
+    background: #7c7c7c6b;
+}
+
+h1.temp {
+    margin: 0;
+    margin-bottom: 0.4em;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+
+.date-container {
+    font-weight: 100;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 100px;
+    margin: 10px 0;
+
+}
+
+.date-container .time {
+    font-size: 70px;
+    color: white;
+
+}
+
+.date-container #am-pm {
+    font-size: 30px;
+    margin-left: 10px;
+    color: white;
+}
+
+.date-container .date {
+    font-size: 30px;
+    color: white;
+}
+
+
+
+
+/*  Section 2  */
+
+.section-2 {
+
+    background-image: url('https://source.unsplash.com/1600x900/?sky');
+}
+
+
+.section-2 .container h1 {
+    font-size: 6vmin;
+    padding-top: 14vmin;
+    padding-bottom: 14vmin;
+    ;
+}
+
+.section-2 .card {
+    width: 20em;
+    margin-top: 10vmin;
+    margin-left: 35vmin;
+}
+
+.section-2 .card .card-text {
+    padding: 0.5em;
+}
+
+.section-2 .card-body>a {
+    font-size: 1.5em;
+}
+
+.section-2 .carousel-item {
+    padding-left: 3rem;
+}
+
+.border-radius {
+    border-radius: 340px;
+    width: 60%;
+}
+
+
+footer {
+    background: rgba(0, 0, 0, 0.815);
+    overflow-x: hidden;
+    padding: 14vmin 14vmin;
+
+}
+
+footer p>span {
+    color: #ff512f;
+}
+
+footer input {
+    border: none !important;
+}
+
+footer input::placeholder {
+    color: white !important;
+}
+
+footer .input-group .input-group-text {
+    background: var(--bggradient);
+    border: none;
+}
+
+footer .column i {
+    color: #dd2476;
+}
+
+footer .column i+i {
+    padding: 0 0.5em;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.815);
+    z-index: 9999;
+    transition: all 1.5s ease;
+}

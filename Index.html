@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Weather Forecasting</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./Style.css" />
+  <link rel="stylesheet" href="./mobile-style.css">
+</head>
+
+<body>
+
+  <header>   
+    <div class="container-fluid p-0">
+    </div>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-7 col-sm-12  text-black">
+            <h1> WEATHER FORECASTING WEBSITE!!!</h1>
+          <p>
+            <h3>A Place where you can find the Weather of any Destination you Desire.</h3>
+          </p>
+        </div>
+        <div class="col-md-5 col-sm-12  h-25">
+          <img src="app.png" alt="Book" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!--Section1-->
+    <section class="section-1">
+      <div class="container text-center">
+        <div class="container">
+            <div class="current-info">
+        
+                <div class="date-container">
+                    <div class="time" id="time">
+                        12:30 <span id="am-pm">PM</span>
+                    </div>
+                    <div class="date" id="date">
+                        Monday, 25 May
+                    </div>
+                </div>
+            </div>
+           
+          <div class="card">
+            <div class="search">
+              <input type="text" class="search-bar" placeholder="Search">
+              <button><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1.5em"
+                  width="1.5em" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z">
+                  </path>
+                </svg></button>
+            </div>
+            <div class="weather loading">
+              <h2 class="city">Weather in Mangalore</h2>
+              <h1 class="temp">51°C</h1>
+              <div class="flex">
+                <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+                <div class="description">Cloudy</div>
+              </div>
+              <div class="humidity">Humidity: 60%</div>
+              <div class="wind">Wind speed: 6.2 km/h</div>
+            </div>
+          </div>
+
+        <div class="row">       
+      </div>
+    </section>
+
+
+    <!-- Section 2 -->
+    <section class="section-2">
+      <div class="container text-center">
+        <h1 style=font-size:70px class="text-black">Meet the Developers!!</h1>
+        <p class="text-secondary"><h2>"We created this website to easily fetch the Weather conditions of places around the Globe." </h2></p>
+      </div>
+      <div class="team row ">
+        <div class="col-md-4 col-12 text-center">
+            <div class="card mr-2 d-inline-block shadow-lg">
+                <div class="card-img-top">
+                  <img src="photo.jpeg" class="img-fluid border-radius p-4" alt="">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Aniket Pai</h3>
+                  <p class="card-text">
+                    Student of NMAM Institute Of Technology
+                  </p>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-md-4 col-12 text-center">
+            <div class="card mr-2 d-inline-block shadow-lg">
+                <div class="card-img-top">
+                  <img src="photo2.jpeg" class="img-fluid border-radius p-4" alt="">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Gaurav Murdeshwar</h3>
+                  <p class="card-text">
+                    Student of NMAM Institute Of Technology
+                  </p>
+                </div>
+              </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container-fluid p-0">
+      <div class="row text-left">
+        <div class="col-md-5 col-sm-5">
+          <h4 class="text-light">About us</h4>
+          <p class="text-muted">We are a Team of Web Enuthusiasts, on a mission to create Web Applications in order to make things User Accesible.</p>
+          <p class="pt-4 text-muted">Copyright ©2021 All rights reserved | This template is made with by
+            <span> Techies</span>
+          </p>
+        </div>
+        <div class="col-md-5 col-sm-12">
+          <h4 class="text-light">Newsletter</h4>
+          <p class="text-muted">Stay Updated</p>
+          <form class="form-inline">
+            <div class="col pl-0">
+              <div class="input-group pr-5">
+                <input type="text" class="form-control bg-dark text-white" id="inlineFormInputGroupUsername2" placeholder="Email">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-2 col-sm-12">
+          <h4 class="text-light">Follow Us</h4>
+          <p class="text-muted">Let us be social</p>
+          <div class="column text-light">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+
+</body>
+</html>
